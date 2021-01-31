@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <h2 class="container">Total {{cart_count}} products in cart</h2>
+    </div>
+    {% for rs in products %}
+        <div class="container">
+            <hr>
+            <div class="row container">
+                <div class="col-md-3"><img src="/{{rs.image1}}" class="img-thumbnail" style="width: 100%;"></div>
+                <div class="col-md-6">{{rs.name}}<br/>
+                    <p>
+                        {{rs.description|truncatechars:100}}
+                    </p>
+                    <p>
+                        Price - <i class="fa fa-inr"></i>{{rs.price}}
+                    </p>
+                    
+                </div>
+                <div class="col-md-3">
+                    <a href="{% url 'viewproduct' rs.id %}"><i class="fa fa-eye" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <a href="{% url 'addtocart' rs.id %}"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    {% endfor %}
+        <div class="container">
+            <div class="container">
+                <div class="" style="float: right;">
+                    <p>Subtotal Amount - <i class="fa fa-inr"></i>{{total_price}}</p>
+                    <button class="btn btn-primary" style="float: right;">Chechout Now</button>
+                </div>
+            </div>
+        </div>
+    <script>
+			var element = document.getElementById("cart");
+			element.classList.add("active");
+	   </script>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div id="fh5co-intro-section" class="section-overlay animate-box" data-animate-effect="fadeIn">
+			<div class="fh5co-intro-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url( {% static 'images/intro.jpg' %});">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 float-overlay">
+							<h2>About Us</h2>
+							<h3>This dedicated to improving the environment and the quality of lives of our customers by providing exceptional plants with benefits attached to each of them and to establish lifetime relationships.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END fh5co-intro-section -->
+		<div id="fh5co-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="about-section">
+							<h3 class="animate-box">Company Background</h3>
+							<!-- <img class="display-left animate-box" src=" {% static 'images/about.jpg' %}" alt="about"> -->
+							<p class="animate-box">We started Gardenly in 2018 and it was out of passion to spread greenery and love to people and also materialize the ideas we have into something as realistic as the terrariums and miniature gardens we make today.</p>
+							<!-- <img class="display-right animate-box" src=" {% static 'images/about.jpg' %}" alt="about"> -->
+							<p class="animate-box">We simply love plants and all the benefits they bring to us, our workplace, home and environment.</p>
+							<blockquote class="animate-box">
+								<p>“Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.”</p>
+								<span>&mdash; Aesha Mavani - Co Founder</span>
+							</blockquote>
+							<div class="row">
+								<div class="col-md-6 animate-box">
+									<p>Our team comprises of individuals w3ho have done wide studies to lean horticulture and together with the support staff, we are all ready to make the world greener.</p>
+								</div>
+								<div class="col-md-6 animate-box">
+									<p>Our team comprises of individuals w3ho have done wide studies to lean horticulture and together with the support staff, we are all ready to make the world greener.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="sidebar">
+							<div class="inner animate-box">
+								<h2>Featured Products</h2>
+								<a href="#"><img class="img-responsive" src=" {% static 'images/product_2.jpg' %}" alt="product"></a>
+								<p>Imagine walking in your favourite garden or a path just lined and littered with trees, a breeze here and a breeze there, the scenic beauty of it all instantly calming you down. </p>
+							</div>
+							<div class="inner animate-box">
+								<h2>Categories</h2>
+								<ul class="list">
+									<li><a href="#">Flower</a>
+										<ul>
+											<li><a href="#">Rose</a></li>
+											<li><a href="#">Lily</a></li>
+											<li><a href="#">Marigold</a></li>
+											<li><a href="#">Hibiscus</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Tools</a></li>
+									<li><a href="#">Plants</a></li>
+							
+								</ul>
+							</div>
+							<div class="inner animate-box">
+								<h2>Customers Says</h2>
+								<p class="quote">“If you really want to do something, You will find a way, If you don't you'll find an excure”</p>
+								<span>&mdash; John - Co Founder</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var element = document.getElementById("aboutus");
+			element.classList.add("active");
+	   </script>
+{% endblock %}
